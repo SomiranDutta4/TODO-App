@@ -6,7 +6,7 @@ const mongoose=require('mongoose');
 // db.once('open',function(){console.log('successfully connected to database')});
 
 const uri=
-'mongodb+srv://somirandutta46:l6kDDAYWkAePgA4V@cluster0.cgr8aoq.mongodb.net/shopping?retryWrites=true&w=majority&appName=Cluster0'
+'mongodb+srv://{your database name}:{password }@cluster0.cgr8aoq.mongodb.net/shopping?retryWrites=true&w=majority&appName='
 mongoose.connect(uri).then(result=>{
     console.log('mongoDB set up')
 }).catch(err=>{
