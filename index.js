@@ -14,7 +14,7 @@ const passport =require('passport');
 const passportLocal=require('./config/passport-local');
 const MongoStore = require('connect-mongo');
 app.use(cookieParser());
-const uri='mongodb+srv://somirandutta46:l6kDDAYWkAePgA4V@cluster0.cgr8aoq.mongodb.net/shopping?retryWrites=true&w=majority&appName=Cluster0'
+const uri='mongodb+srv://{your own database}:{password }@cluster0.cgr8aoq.mongodb.net/shopping?retryWrites=true&w=majority&appName='
 
 
 app.use(session({
